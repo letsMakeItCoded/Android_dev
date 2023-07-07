@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fiteness</string>
+
+    <string-array name="beginner_cat">
+        <item>ARM SECTION</item>
+        <item>CHEST SECTION</item>
+        <item>ABS SECTION</item>
+        <item>SHOULDER BACK SECTION</item>
+        <item>LEGS SECTION</item>
+    </string-array>
+
+
+</resources>
