@@ -2,9 +2,9 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/white"/>
     <item>
-        <bitmap android:src="@drawable/body" android:gravity="center"/>
+        <bitmap android:src="@drawable/body" android:gravity="center" />
     </item>
     <item>
-        <bitmap android:src="@drawable/workout" android:gravity="bottom"/>
+        <bitmap android:src="@drawable/workout" android:gravity="center"/>
     </item>
 </layer-list>
