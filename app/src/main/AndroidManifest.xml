@@ -16,8 +16,9 @@
             android:name=".MainActivity4"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
-            android:exported="true" >
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,8 +26,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
+<<<<<<< HEAD
             android:exported="true" />
+=======
+            android:exported="true"/>
+>>>>>>> 5f37986d0a86dec563ccbb1c3b6e8d30a755547a
         <activity
             android:name=".MainActivity"
             android:exported="true" />
