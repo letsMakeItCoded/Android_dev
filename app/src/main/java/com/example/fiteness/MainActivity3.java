@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -25,7 +26,8 @@ public class MainActivity3 extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.menu_item1) {
-                Toast.makeText(this, "Nice one there", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity3.this, Home_layout.class);
+                startActivity(intent);
             } else if (itemId == R.id.menu_item2) {// Handle menu item 2 selection
                 // Add more cases for other menu items if needed
             }

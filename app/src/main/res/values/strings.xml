@@ -9,5 +9,41 @@
         <item>LEGS SECTION</item>
     </string-array>
 
+    <string-array name="workout_cat">
+        <item>JUMPING JACKS</item>
+        <item>ABDOMINAL CRUNCHES</item>
+        <item>RUSSIAN TWIST</item>
+        <item>MOUNTAIN CLIMBER</item>
+        <item>HEEL TOUCH</item>
+        <item>LEG RAISES</item>
+        <item>PLANK</item>
+        <item>ABDOMINAL CRUNCHES</item>
+        <item>RUSSIAN TWIST</item>
+        <item>MOUNTAIN CLIMBER</item>
+        <item>HEEL TOUCH</item>
+        <item>LEG RAISES</item>
+        <item>PLANK</item>
+        <item>COBRA STRETCH</item>
+        <item>SPINE LUMBER TWIST STRETCH LEFT</item>
+        <item>SPINE LUMBER TWIST STRETCH RIGHT</item>
+    </string-array>
 
+    <string-array name="time_cat">
+        <item>00:20</item>
+        <item>x16</item>
+        <item>x20</item>
+        <item>x16</item>
+        <item>x20</item>
+        <item>x16</item>
+        <item>00:20</item>
+        <item>x12</item>
+        <item>x32</item>
+        <item>x12</item>
+        <item>x20</item>
+        <item>x14</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:30</item>
+    </string-array>
 </resources>
