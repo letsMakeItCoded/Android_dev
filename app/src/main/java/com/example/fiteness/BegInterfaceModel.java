@@ -16,4 +16,8 @@ public class BegInterfaceModel {
     public int getFitnessImage() {
         return fitnessImage;
     }
+
+    public int getItemId() {
+        return getItemId();
+    }
 }

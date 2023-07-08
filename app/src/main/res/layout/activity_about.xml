@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral80"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="About Workout Buddy"
+        android:textSize="35dp"
+        android:id="@+id/intro"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro"
+        android:layout_marginTop="10dp"
+        android:text="Workout Buddy is a fitness app that helps you achieve your health and wellness goals. Whether you want to lose weight, build muscle, improve your endurance, or just feel better, Workout Buddy has a personalized plan for you.
+Workout Buddy combines expert guidance, smart tracking, and social support to help you stay motivated and accountable. You can choose from hundreds of workouts, track your progress, and connect with other users who share your journey.
+Workout Buddy is more than just an app. It’s a community of people who are passionate about fitness and wellness. You can join challenges, earn badges, and compete with friends. You can also get tips, advice, and inspiration from our coaches and experts.
+Workout Buddy is designed to fit your lifestyle. You can use it anytime, anywhere, and with any device."
+        />
+
+
+
+</RelativeLayout>

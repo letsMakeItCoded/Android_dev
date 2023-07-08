@@ -1,6 +1,7 @@
 package com.example.fiteness;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,36 @@ public class BWI_RecyclerViewAdaper extends RecyclerView.Adapter<BWI_RecyclerVie
     public void onBindViewHolder(@NonNull BWI_RecyclerViewAdaper.MyViewHolder holder, int position) {
         holder.begWorkFitName.setText(begWorkoutInterfaces.get(position).getFitnessName());
         holder.begWorkHow.setText(begWorkoutInterfaces.get(position).getFitnessTime());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                int clickedPosition = holder.getAdapterPosition();
+
+                Intent intent;
+                switch (clickedPosition) {
+                    case 0:
+                        intent = new Intent(context, WorkOutDetails.class);
+                        intent.putExtra("Work-out-name", begWorkoutInterfaces.get(clickedPosition).getFitnessName());
+                        break;
+                    case 1:
+                        intent = new Intent(context, MainActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(context, MainActivity2.class);
+                        break;
+                    case 3:
+                        intent = new Intent(context, Home_layout.class);
+                        break;
+                    default:
+                        intent = new Intent(context, MainActivity3.class);
+                        break;
+                }
+                context.startActivity(intent);
+
+            }
+        });
 
     }
 

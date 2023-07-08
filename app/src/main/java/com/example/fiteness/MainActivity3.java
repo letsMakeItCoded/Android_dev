@@ -28,8 +28,9 @@ public class MainActivity3 extends AppCompatActivity {
             if (itemId == R.id.menu_item1) {
                 Intent intent = new Intent(MainActivity3.this, Home_layout.class);
                 startActivity(intent);
-            } else if (itemId == R.id.menu_item2) {// Handle menu item 2 selection
-                // Add more cases for other menu items if needed
+            } else if (itemId == R.id.menu_item3) {
+                Intent intent = new Intent(MainActivity3.this, About.class);
+                startActivity(intent);
             }
             return true;
         });

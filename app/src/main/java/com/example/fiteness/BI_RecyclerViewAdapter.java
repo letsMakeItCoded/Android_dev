@@ -1,10 +1,12 @@
 package com.example.fiteness;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +37,35 @@ public class BI_RecyclerViewAdapter extends RecyclerView.Adapter<BI_RecyclerView
     public void onBindViewHolder(@NonNull BI_RecyclerViewAdapter.MyViewHolder holder, int position) {
         holder.tvBegFitName.setText(begInterfaceModels.get(position).getFitnessName());
         holder.begImageView.setImageResource(begInterfaceModels.get(position).getFitnessImage());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                int clickedPosition = holder.getAdapterPosition();
+
+                Intent intent;
+                switch (clickedPosition) {
+                    case 0:
+                        intent = new Intent(context, MainActivity4.class);
+                        break;
+                    case 1:
+                        intent = new Intent(context, MainActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(context, MainActivity2.class);
+                        break;
+                    case 3:
+                        intent = new Intent(context, Home_layout.class);
+                        break;
+                    default:
+                        intent = new Intent(context, MainActivity3.class);
+                        break;
+                }
+                context.startActivity(intent);
+
+            }
+        });
 
     }
 
